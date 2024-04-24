@@ -1,0 +1,157 @@
+baseURL: 'https://www.eitch-consulting.com/'
+title: Eitch Consulting
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: false
+enableGitInfo: false
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Eitch Consulting
+  #authorimage: ../assets/images/global/author.webp
+  #og_image: /images/tailbliss-cover.png
+  moto: "Providing top-quality Linux and Infrastructure services"
+  description: "Cloud computing, Infrastructure as Code (IaC), configuration management, CI/CD workflows, container orchestration, web applications infrastructure, databases, system troubleshooting, you name it - we can deal with it."
+  disable_theme_toggle: false
+  disable_stay_uptodate: true
+
+#  p3:
+#    heading: "Some of our customers"
+#    content:
+#      - text: "With Eitch Consulting, the customers can heavily rely on top-quality work and schedule. We get to analyze what are the problems (server infrastructure, documentation, basic security, scaling) and come out with a proper solution, with a focus on Linux servers and open source softwares."
+#    links:
+#        - text: Check some of our customers cases and stories
+#          url: "#"
+#    logos:
+#      - identifier: a
+#        image: "images/global/sample-logo.svg"
+#        alt: "a"
+#      - identifier: b
+#      - identifier: c
+#      - identifier: d
+#      - identifier: e
+#      - identifier: f
+#  p4:
+#    heading: "From the blog"
+#    content:
+#      - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
+
+  social_media:
+    github:
+      enabled: false
+      url: '#'
+    facebook:
+      enabled: false
+      url: '#'
+    instagram:
+      enabled: false
+      url: '#'
+    twitter:
+      enabled: false
+      url: '#'
+    
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+#    - identifier: contact
+#      name: Contact
+#      url: /contact/
+#      weight: 20
+  categories:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+#    - identifier: blog
+#      name: Blog
+#      url: /categories/blog/
+#      weight: 20
+#    - identifier: contact
+#      name: Contact
+#      url: /contact/
+#      weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"
