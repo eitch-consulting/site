@@ -1,7 +1,5 @@
 baseURL: 'https://www.eitch-consulting.com/'
 title: Eitch Consulting
-languageCode: en-us
-DefaultContentLanguage: en
 enableEmoji: false
 enableGitInfo: false
 enableRobotsTXT: true
@@ -10,6 +8,24 @@ paginate: 9
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+languages:
+  en:
+    disabled: false
+    contentDir: content/en
+    languageCode: en-US
+    languageName: English
+    languageDirection: ltr
+    weight: 1
+  pt-br:
+    disabled: false
+    contentDir: content/pt-br
+    languageCode: pt-BR
+    languageName: Brazilian Portuguese
+    languageDirection: ltr
+    weight: 2
 
 markup:
   goldmark:
@@ -70,15 +86,15 @@ params:
 #      - identifier: d
 #      - identifier: e
 #      - identifier: f
-#  p4:
-#    heading: "From the blog"
-#    content:
-#      - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
+  p4:
+    heading: "From the tech blog"
+    content:
+      - text: "Some insights into infrastructure and automation technical content and tutorials."
 
   social_media:
     github:
-      enabled: false
-      url: '#'
+      enabled: true
+      url: 'https://github.com/eitch-consulting'
     facebook:
       enabled: false
       url: '#'
@@ -96,6 +112,10 @@ menu:
       name: About
       url: /about/
       weight: 10
+    - identifier: tech-blog
+      name: Tech Blog
+      url: /tech-blog/
+      weight: 10
 #    - identifier: contact
 #      name: Contact
 #      url: /contact/
@@ -105,19 +125,19 @@ menu:
       name: About
       url: /about/
       weight: 10
+    - identifier: tech-blog
+      name: Tech Blog
+      url: /tech-blog/
+      weight: 10
   footer:
     - identifier: about
       name: About
       url: /about/
       weight: 10
-#    - identifier: blog
-#      name: Blog
-#      url: /categories/blog/
-#      weight: 20
-#    - identifier: contact
-#      name: Contact
-#      url: /contact/
-#      weight: 30
+    - identifier: tech-blog
+      name: Tech Blog
+      url: /tech-blog/
+      weight: 20
 
 markup:
   goldmark:
