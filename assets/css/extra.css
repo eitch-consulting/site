@@ -1,0 +1,13 @@
+ul.hometechlist {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+ul.hometechlist li {
+  margin-bottom: 10px;
+}
+
+ul.hometechlist li a {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}

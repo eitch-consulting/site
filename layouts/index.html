@@ -30,8 +30,7 @@
 
     <!-- More main page content here... -->
 
-    <!-- Our mission section -->
-    <!--
+    <!-- Our services section -->
     <div class="relative my-4">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
             <div class="relative sm:py-8 lg:py-0">
@@ -63,18 +62,24 @@
                     </h2>
                     <div class="mt-6 text-gray-900 dark:text-white">
                         <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
-                            {{ range .Site.Params.P1.Content }}
                             <p class="text-lg text-gray-900 dark:text-white">
-                                {{ .text }}
+                                {{ .Site.Params.P1.Content.textup }}
                             </p>
+                            <ul class="hometechlist">
+                            {{ range .Site.Params.P1.Tech }}
+                              <li><a href="/services/#{{ .anchor }}">{{ .title }}</a></li>
                             {{ end }}
+                            </ul>
+                            <p class="text-lg text-gray-900 dark:text-white">
+                                {{ .Site.Params.P1.Content.textdown }}
+                                Check our <a style="text-decoration-line: underline" href="/services/">services page</a> to see detailed information about what we can do for you.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    -->
 
     <!-- JITsection -->
     <!--
