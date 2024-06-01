@@ -124,7 +124,7 @@ file '/tmp/testing' do
   owner 'root'
   group 'root'
   mode '0640'
-  content "this was created by chef for #{node['hostname]}"
+  content "this was created by chef for #{node['hostname']}"
 end
 ```
 
