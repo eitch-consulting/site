@@ -11,6 +11,7 @@ categories: Tech-Blog
 tags:
 - ansible
 - automation
+- configuration management
 type: tech-blog
 ---
 
