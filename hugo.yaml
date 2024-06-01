@@ -119,7 +119,7 @@ params:
   social_media:
     github:
       enabled: true
-      url: 'https://github.com/eitch-consulting'
+      url: 'https://github.com/eitch-consulting/site'
     facebook:
       enabled: false
       url: '#'
