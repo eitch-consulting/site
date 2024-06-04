@@ -297,6 +297,9 @@ Besides the other topics, we also have great experience working with this list t
 - `Single sign-on with Keycloak`: instance configuration, theme development, custom provider creation, knowledge
   with application oauth2 and saml flows, and many other things related to single sign-on services.
 
+- `LDAP directory with OpenLDAP`: full installation and configuration of a LDAP directory, including recommendations
+  about its structure and classes, and integration with other systems like SSH for centralized logins.
+
 - `WordPress`: full installation, configuration and optimization services. We can help you with scaling,
   caching, CDN distribution, help with many plugins, the web server and php process behind it, and so on.
 
