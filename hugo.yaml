@@ -72,7 +72,7 @@ params:
 
   p1:
     heading: "Our services"
-    image: "images/tools-864983_1920.jpg"
+    image: "images/tools-864983_560.jpg"
     content:
       textup: "We are specialized in DevOps services and Linux infrastructure. Some of the technologies that we work:"
     tech:
